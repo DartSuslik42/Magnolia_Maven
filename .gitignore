@@ -2,3 +2,4 @@
 /.idea/
 /basic-project-webapp/target/
 /modules/MyJavaModule/target/
+/basic-project-webapp/src/main/webapp/WEB-INF/lib/
