@@ -1,0 +1,12 @@
+templateScript: /MyJavaModule/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: MyJavaModule:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: MyJavaModule:components/dummy-component
+      dummy-image:
+        id: MyJavaModule:components/image

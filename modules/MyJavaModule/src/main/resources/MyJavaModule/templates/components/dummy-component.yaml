@@ -1,0 +1,2 @@
+templateScript: /MyJavaModule/templates/components/dummy-component.ftl
+renderType: freemarker
