@@ -1,0 +1,8 @@
+form:
+  tabs:
+    - name: tabMain
+      fields:
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+
+actions: !include /module/includes/dialogs/actions.inc.yaml
