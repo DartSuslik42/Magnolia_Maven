@@ -1,7 +1,14 @@
-[#assign jcr = hellofn.sayHello(content.image)]
-[#if jcr?has_content && damfn.getAssetLink(jcr)?has_content]
-    [#assign imageLink = damfn.getAssetLink(jcr)]
+[#if content.image?has_content && damfn.getAssetLink(content.image)?has_content]
+    [#assign rawLink = damfn.getAssetLink(content.image)]
+
+    [#if rawLink?ends_with(".svg")]
+        [#assign imageLink = hellofn.sayHello(rawLink)]
+    [#else]
+        [#assign imageLink = rawLink]
+    [/#if]
+
 [#else]
     [#assign imageLink = "#"]
 [/#if]
+
 <img src='${imageLink}' alt='#'>
