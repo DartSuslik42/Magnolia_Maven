@@ -1,12 +1,7 @@
-[#if content.image?has_content && damfn.getAssetLink(content.image)?has_content]
-    [#assign imageLink = damfn.getAssetLink(content.image)]
+[#assign jcr = hellofn.sayHello(content.image)]
+[#if jcr?has_content && damfn.getAssetLink(jcr)?has_content]
+    [#assign imageLink = damfn.getAssetLink(jcr)]
 [#else]
     [#assign imageLink = "#"]
 [/#if]
-<div>
-    ${hellofn.sayHello()}
-
-    <img src='${imageLink}' alt='#'>
-
-    ${hellofn.sayHello(2)}
-</div>
+<img src='${imageLink}' alt='#'>
