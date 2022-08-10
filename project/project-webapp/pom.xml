@@ -39,11 +39,6 @@
       <artifactId>module</artifactId>
       <version>1.0</version>
     </dependency>
-    <dependency>
-      <groupId>com.ryanbrookepayne.magnolia</groupId>
-      <artifactId>magnolia-templating-functions</artifactId>
-      <version>1.0</version>
-    </dependency>
 
   </dependencies>
 

@@ -12,6 +12,7 @@
   <properties>
     <magnoliaBundleVersion>6.0</magnoliaBundleVersion>
     <javaVersion>1.8</javaVersion>
+    <javaxValidationVersion>2.0.1.Final</javaxValidationVersion>
   </properties>
 
   <dependencyManagement>
@@ -30,6 +31,17 @@
     <dependency>
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-rendering</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>${javaxValidationVersion}</version>
     </dependency>
 
     <!-- TEST -->

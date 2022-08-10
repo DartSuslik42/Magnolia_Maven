@@ -3,5 +3,10 @@
 [#else]
     [#assign imageLink = "#"]
 [/#if]
+<div>
+    ${hellofn.sayHello()}
 
-<img src='${imageLink}' alt='#'>
+    <img src='${imageLink}' alt='#'>
+
+    ${hellofn.sayHello(2)}
+</div>
